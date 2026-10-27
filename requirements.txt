@@ -1,0 +1,11 @@
+ultralytics      # YOLOv8 training and inference
+opencv-python    # image processing, Haar cascade, display windows
+numpy
+mss              # fast screen capture of the camera feed
+pyyaml
+# experiments/traffic_sign_classifier.ipynb also needs:
+tensorflow
+scikit-learn
+pandas
+pillow
+matplotlib

@@ -1,0 +1,11 @@
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+# Training outputs and datasets are large and regenerated locally
+runs/
+dataset/
+trained-dataset/
+hazmat13/
+german traffic sign/
+yolov8n.pt
+data.yaml
