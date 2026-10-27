@@ -42,7 +42,7 @@ The Mi Camera streams to its app on a laptop. Instead of writing a custom video 
 
 ## Hazmat detection model
 
-A YOLOv8-nano model fine-tuned on **Hazmat13** (Kaggle), a dataset of hazardous-materials placards.
+A YOLOv8-nano model fine-tuned on [**Hazmat13**](https://www.kaggle.com/datasets/eliasschramm/hazmat13), a dataset of 13 hazmat sign classes with ~52,800 images after augmentation. It builds on the dataset from the original [DeepHAZMAT paper](https://arxiv.org/abs/2007.06392) by Sharifi, Zibaei & Rezaei.
 
 | Setting | Value |
 |---|---|
