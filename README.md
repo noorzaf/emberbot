@@ -1,7 +1,9 @@
 # EmberBot
 
 **A line-following rescue robot that watches for fire and hazardous-materials signs through an onboard camera.**
-Built by Team NDA for the World Robot Olympiad (WRO), Senior category.
+Built by Team NDA for the World Robot Olympiad (WRO), Senior category, June–July 2025.
+
+**My role:** I designed and built the robot's hardware and wrote all of its code: the Arduino line-following controller, the fire detector, and the hazmat detection model, which I trained myself. My teammates prepared the team's presentation and competition materials.
 
 ![EmberBot following the line, detecting a flame, and detecting hazmat signs far away, close up and upside down](media/demo.gif)
 
@@ -84,7 +86,7 @@ Along the way, [`experiments/traffic_sign_classifier.ipynb`](experiments/traffic
 
 - The fire detector responds to brightness rather than to fire specifically. A small YOLO model trained on flame images, or a check for colour and flicker, would cut false alarms.
 - Vision runs on a laptop by screen-capturing the camera app, so the robot isn't self-contained. A next version could run the model on a Raspberry Pi with a directly connected camera.
-- The Arduino sketch never sets the motor pins as outputs in `setup()`, and it stops the motors after every 20–30 ms move, so the robot advances in short pulses. Proper PWM speed control on the L298 enable pins would give smoother motion.
+- The robot advances in short pulses: it moves for 20–30 ms, stops, and re-reads the sensors, which keeps it slow enough to track the line. Proper PWM speed control on the L298 enable pins would give smoother, faster motion.
 
 ---
 

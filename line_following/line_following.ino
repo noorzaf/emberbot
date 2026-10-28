@@ -47,8 +47,11 @@ void setup() {
   pinMode(sensor0, INPUT);
   pinMode(sensor1, INPUT);
   pinMode(sensor2, INPUT);
-  // NOTE: the original code never sets the motor pins (in1–in4) as OUTPUT.
-  // Adding pinMode(inX, OUTPUT) for each would make the motor drive more reliable.
+
+  pinMode(in1, OUTPUT);
+  pinMode(in2, OUTPUT);
+  pinMode(in3, OUTPUT);
+  pinMode(in4, OUTPUT);
 }
 
 void loop() {
